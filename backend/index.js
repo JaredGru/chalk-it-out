@@ -1,17 +1,12 @@
 const express = require('express');
-const cors = require('cors');
+const cors = require('./middleware/cors')
 require('dotenv').config();
 
 const app = express();
 const port = process.env.port || 5000;
 
-var corsOptions = {
-    origin: 'http://localhost:5000',
-    optionsSuccessStatus: 200 
-}
-
 //middleware
-app.use(cors(corsOptions));
+app.use(cors);
 app.use(express.json());
 
 //api endpoints
