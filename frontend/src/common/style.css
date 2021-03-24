@@ -1,0 +1,73 @@
+.note {
+  margin: 15px 5px;
+  padding: 15px;
+  box-shadow: 0px 0px 1px grey;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 150px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.note-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.note-input-area {
+  flex: 15;
+  /* overflow: scroll; */
+}
+
+.new-task-button {
+  flex: 1;
+  text-align: center;
+  background-color: #725bff;
+  width: 50%;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 35px;
+  color: white;
+  font-size: 0.8rem;
+  padding: 5px 15px;
+  transform: translate(0, 30%);
+  font-weight: bold;
+}
+
+.note-add-button {
+  width: 15px;
+  height: auto;
+  margin-left: 5px;
+}
+
+.setting-button {
+  width: 15px;
+  height: auto;
+}
+
+.settings_pop_up {
+  background-color: white;
+  box-shadow: 0px 0px 1px grey;
+  position: absolute;
+  right: -12%;
+  top: 20%;
+  z-index: 2;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
+
+.font-size-8 {
+  font-size: 0.8rem;
+}
