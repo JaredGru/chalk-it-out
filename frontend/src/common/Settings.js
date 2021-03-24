@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import pinImage from '../assets/pin.svg'
 
 function Settings({onSetColor,noteColor}){
     const [setting, setSetting] = useState(null)
@@ -13,12 +14,17 @@ function Settings({onSetColor,noteColor}){
     }
     return (
         <div className="animate__animated animate__fadeInDown settings_pop_up">
-            <div className="font-size-8" onClick={()=>{onClickSettings('color')}}>
+            <div className="font-size-8 setting-item" onClick={()=>{onClickSettings('color')}}>
                 Change color
-            </div>
-            {setting ==='color' &&
+                {setting ==='color' &&
                 <input type="color" value={noteColor} onChange={onSetColor}/>
-            }
+                }
+            </div>
+            <div className="font-size-8 setting-item">
+                <span>Pin</span>
+                <img src={pinImage} alt="pinImage" className="pinImage"/>
+            </div>
+           
         </div>
     )
 }

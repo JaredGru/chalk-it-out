@@ -18,6 +18,15 @@
   padding: 10px;
   max-width: 2rem;
   max-height: 2rem;
+  transition: all 0.2s linear;
+}
+
+.add-button:hover {
+  transition: all 0.2s linear;
+  width: 2.1rem;
+  height: 2.1rem;
+  max-width: 2.1rem;
+  max-height: 2.1rem;
 }
 
 .add-image {

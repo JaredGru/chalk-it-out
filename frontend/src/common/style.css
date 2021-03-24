@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 0;
+  border-radius: 0px;
 }
 
 .note-header {
@@ -38,6 +39,7 @@
   padding: 5px 15px;
   transform: translate(0, 30%);
   font-weight: bold;
+  min-height: 1rem;
 }
 
 .note-add-button {
@@ -51,6 +53,11 @@
   height: auto;
 }
 
+.close-button {
+  width: 10px;
+  height: auto;
+}
+
 .settings_pop_up {
   background-color: white;
   box-shadow: 0px 0px 1px grey;
@@ -61,6 +68,65 @@
   padding: 5px;
   border-radius: 3px;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+}
+
+.checked-checkbox {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: solid 1px #0066b8;
+  background-color: #0066b8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.2s linear;
+  position: relative;
+}
+
+.checkbox-inner {
+  transition: all 0.5s linear;
+}
+
+.checked-checkbox-inner {
+  background-color: white;
+  width: 20%;
+  height: 100%;
+  border-radius: 5%;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+
+.checked-checkbox-inner-2 {
+  background-color: white;
+  width: 100%;
+  height: 20%;
+  border-radius: 5%;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+
+.checkbox {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: solid 1px #0066b8;
+  transition: border 0.2s linear;
+}
+
+.checkbox-disabled {
+  border-radius: 0;
+  border: solid 1px rgb(255, 228, 228);
+  background-color: rgb(64, 77, 255);
+  box-shadow: 0px 0px 1px rgb(72, 182, 255);
+  transition: all 0.5s linear;
 }
 
 input {
@@ -70,4 +136,17 @@ input {
 
 .font-size-8 {
   font-size: 0.8rem;
+}
+
+.pinImage {
+  width: 15px;
+  height: auto;
+}
+
+.setting-item {
+  padding-top: 1px;
+  padding-bottom: 2px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
